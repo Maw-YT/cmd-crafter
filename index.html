@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cmd Crafter: The Genesis Protocol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <p>Initializing Core Systems...</p>
+        <p>Loading Transdimensional Audio Streams...</p>
+        <div class="spinner"></div>
+    </div>
+    <div id="game-container-wrapper">
+        <div id="game-container">
+            <header>
+                <h1>Cmd Crafter: The Genesis Protocol</h1>
+                <div id="status-bar">
+                    <span>1. AP: <span id="ap-value">10</span></span>
+                    <span>2. Level: <span id="level-value">1</span> (<span id="xp-value">0</span>/<span id="xp-next-level-value">100</span> XP)</span>
+                    <span id="resources-container">3. Resources: <span id="resources-display">None</span></span>
+                </div>
+            </header>
+            <div id="terminal">
+                <div id="input-line">
+                    <span id="prompt">&gt;</span>
+                    <input type="text" id="command-input" autofocus />
+                </div>
+                <div id="predictions-container">
+                    <!-- Predictions will be shown here -->
+                </div>
+                <div id="output"></div>
+            </div>
+            <div id="miner-types-info" class="hidden">
+                <h3>Available Miner Types (Cost: <span id="miner-cost-info">5</span> AP each):</h3>
+                <ul>
+                    <!-- Miner types will be populated by JS -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <audio id="background-music" loop></audio>
+    <script type="importmap">
+      {
+        "imports": {
+          "./config.js": "./config.js",
+          "./state.js": "./state.js",
+          "./ui.js": "./ui.js",
+          "./gameLogic.js": "./gameLogic.js",
+          "./commands.js": "./commands.js",
+          "./setupCommands.js": "./setupCommands.js",
+          "./gameplayCommands.js": "./gameplayCommands.js",
+          "./persistenceCommands.js": "./persistenceCommands.js"
+        }
+      }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
