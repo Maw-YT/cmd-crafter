@@ -6,7 +6,7 @@ import { BASE_GAMEPLAY_COMMANDS, BACKGROUND_MUSIC_PATH } from './config.js'; // 
 
 let audioCtx;
 let typingBuffer;
-const TYPING_SOUND_PATH = '/keypress_sound.mp3';
+const TYPING_SOUND_PATH = '/keypress_sound.wav';
 let gameContainerElem;
 let backgroundMusicElem;
 
