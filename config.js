@@ -61,9 +61,9 @@ export const OBSERVATION_SELLABLE_ITEMS = {
 };
 
 export const OBSERVE_COOLDOWN_DURATION = 30000; // 30 seconds in milliseconds
-export const BACKGROUND_MUSIC_PATH = '/background_music.mp3'; // Corrected path
+export const BACKGROUND_MUSIC_PATH = '/background_music.wav'; // Corrected path
 
 // New configuration for Local AI (Ollama via LiteLLM)
-export const LOCAL_AI_ENABLED = true; // Set to false to disable local AI calls (though no fallback is implemented here)
+export const LOCAL_AI_ENABLED = false; // Set to false to disable local AI calls (though no fallback is implemented here)
 export const LOCAL_AI_ENDPOINT = 'http://localhost:8000/v1/chat/completions'; // Default LiteLLM OpenAI-compatible endpoint
 export const LOCAL_AI_MODEL = 'ollama/mistral'; // User-specified model, e.g., "ollama/deepseek-coder" or the specific "deepseek-r1"
